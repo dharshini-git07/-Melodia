@@ -44,9 +44,7 @@ function App() {
     }
 
     setLoading(true);
-    const backendUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-
-    fetch(`${backendUrl}/api/login`, {
+    fetch('/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
