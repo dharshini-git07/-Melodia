@@ -111,27 +111,6 @@ function App() {
                 <div className="card-title">Chill Vibes</div>
                 <div className="card-sub">Playlist • Daily Mix</div>
               </div>
-              <div className="music-card">
-                <div className="card-img-placeholder">🎧</div>
-                <div className="card-title">Acoustic Hits</div>
-                <div className="card-sub">Album • Various Artists</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="dash-section">
-            <h2 className="section-title">Top Playlists</h2>
-            <div className="grid-cards">
-              <div className="music-card">
-                <div className="card-img-placeholder">🔥</div>
-                <div className="card-title">Top 50 Global</div>
-                <div className="card-sub">Weekly Chart</div>
-              </div>
-              <div className="music-card">
-                <div className="card-img-placeholder">⚡</div>
-                <div className="card-title">Pop Remixes</div>
-                <div className="card-sub">Updated Today</div>
-              </div>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 24px 16px;
 }
 
 .login-card {
@@ -12,11 +12,12 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   width: 100%;
-  max-width: 440px;
-  padding: 40px 32px;
+  max-width: 450px;
+  padding: 44px 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .brand-header {
@@ -27,8 +28,8 @@
 }
 
 .brand-icon {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   background: var(--primary);
   border-radius: 50%;
   display: flex;
@@ -36,11 +37,11 @@
   align-items: center;
   font-weight: bold;
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .brand-name {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--text-main);
@@ -240,8 +241,9 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   width: 100%;
-  max-width: 800px;
-  padding: 40px;
+  max-width: 700px;
+  padding: 36px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .dashboard-header {
@@ -280,7 +282,7 @@
 }
 
 .dash-section {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .section-title {
@@ -292,15 +294,15 @@
 
 .grid-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .music-card {
   background-color: #121212;
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 16px;
+  padding: 18px;
   transition: transform 0.2s, border-color 0.2s;
 }
 
@@ -311,7 +313,7 @@
 
 .card-img-placeholder {
   width: 100%;
-  height: 120px;
+  height: 140px;
   background: linear-gradient(135deg, #282828, #181818);
   border-radius: 6px;
   margin-bottom: 12px;
@@ -319,7 +321,7 @@
   justify-content: center;
   align-items: center;
   color: var(--accent);
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .card-title {
@@ -332,4 +334,29 @@
 .card-sub {
   font-size: 12px;
   color: var(--text-sub);
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+
+  .dashboard-card {
+    padding: 24px 18px;
+  }
+
+  .grid-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .btn-logout {
+    align-self: flex-start;
+  }
 }
