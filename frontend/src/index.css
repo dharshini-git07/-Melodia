@@ -1,0 +1,27 @@
+:root {
+  --bg: #121212;
+  --card: #181818;
+  --primary: #1DB954;
+  --primary-hover: #1ed760;
+  --accent: #8B5CF6;
+  --text-main: #FFFFFF;
+  --text-sub: #B3B3B3;
+  --border: #303030;
+  --error: #f15e6c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
