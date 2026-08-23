@@ -2,7 +2,7 @@
   "services": {
     "frontend": {
       "root": "frontend",
-      "framework": "create-react-app"
+      "outputDirectory": "dist"
     },
     "backend": {
       "root": "backend",
